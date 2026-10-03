@@ -118,7 +118,7 @@
 	 * Display errors on the page.
 	 */
 	ProgressBar.prototype.displayError = function(string) {
-		var error = $('<div class="alert alert-danger"></div>').html(string);
+		var error = $('<div class="alert alert-error"></div>').html(string);
 		$(this.element).before(error).hide();
 
 		if (this.errorCallback) {
